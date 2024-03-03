@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import { Button } from "primereact/button";
+import { InputText } from "primereact/inputtext";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Ripple } from "primereact/ripple";
+import { PrimeReactProvider } from "primereact/api";
+import { StyleClass } from "primereact/styleclass";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+
+import Wrapper from "./components/Wrapper";
+import Resume from "./components/Resume";
+
+import "primereact/resources/primereact.min.css"; //core css
+import "primereact/resources/themes/md-dark-deeppurple/theme.css"; //theme
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Wrapper>
+            <Routes>
+              <Route path="/" element={<Hero />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </Wrapper>
+        </div>
+      </Router>
+    </PrimeReactProvider>
+  );
 }
 
-export default App
+export default App;

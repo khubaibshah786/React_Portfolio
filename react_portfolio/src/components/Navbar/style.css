@@ -1,0 +1,10 @@
+.menubar-container {
+    display: flex;
+    justify-content: flex-end;
+    border: none; /* Remove the border */
+}
+
+.p-menubar {
+    margin-left: auto;
+    border: none; /* Remove the border */
+}

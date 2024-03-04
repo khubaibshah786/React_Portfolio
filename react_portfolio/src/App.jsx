@@ -9,6 +9,7 @@ import { PrimeReactProvider } from "primereact/api";
 import { StyleClass } from "primereact/styleclass";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
@@ -30,7 +31,8 @@ function App() {
           <Wrapper>
             <Routes>
               <Route path="/" element={<Hero />} />
-              <Route path="/resume" element={<Resume />} />
+              <Route path="/Resume" element={<Resume />} />
+              <Route path="/Portfolio" element={<Portfolio />} />
             </Routes>
           </Wrapper>
         </div>

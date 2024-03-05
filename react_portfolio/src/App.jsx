@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ProjectGallery from "./components/ProjectGallery";
+import Contact from "./components/Contact";
 
 // import { projects } from './project'
 import projects from './projects.json'; // Correct import statement
@@ -34,6 +35,7 @@ function App() {
               <Route path="/Resume" element={<Resume />} />
               <Route path="/Portfolio" element={<Portfolio />} />
               <Route path="/ProjectGallery" element={<ProjectGallery projects={projects} />} />
+              <Route path="/Contact" element={<Contact />} />
             </Routes>
           </Wrapper>
         </div>

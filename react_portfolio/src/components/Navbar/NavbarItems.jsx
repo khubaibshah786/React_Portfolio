@@ -20,6 +20,11 @@ export const items = [
         url: "/Resume",
     },
     {
+        label: 'Contact',
+        icon: 'pi pi-envelope',
+        url: "/Contact",
+    },
+    {
         label: 'Portfolio',
         icon: 'pi pi-search',
         items: [
@@ -51,10 +56,7 @@ export const items = [
             }
         ]
     },
-    {
-        label: 'Contact',
-        icon: 'pi pi-envelope'
-    },
+
     
 ];
 

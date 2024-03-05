@@ -20,8 +20,14 @@ useEffect(() => {
   }, [projectData])
   
   return (
-    <div>
-      <h2>{projectData?.title}</h2>
+    <div >
+        
+<div className=" px-4 py-5 md:px-6 lg:px-8">
+    <div className="border-bottom-1 surface-border">
+        <span className="block text-6xl font-bold mb-4 drop-in">
+        My <span style={{ color: "var(--primary-color)" }}>{projectData?.title}</span>
+      </span>
+    </div>
       <p>
         Deployed Link:{" "}
         <a href={projectData?.deployedLink} target="_blank" rel="noopener noreferrer">
@@ -35,6 +41,11 @@ useEffect(() => {
         </a>
       </p>
       <img src={projectData?.screenshot} alt={projectData?.title} />
+
+
+
+</div>
+      
     </div>
   );
 }

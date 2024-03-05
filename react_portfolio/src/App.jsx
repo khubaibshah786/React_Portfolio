@@ -20,7 +20,7 @@ import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
 
 import "primereact/resources/primereact.min.css"; //core css
-import "primereact/resources/themes/lara-dark-teal/theme.css"; //theme
+import "primereact/resources/themes/mdc-dark-indigo/theme.css"; //theme
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import "./App.css";

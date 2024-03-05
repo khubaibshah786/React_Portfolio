@@ -25,13 +25,23 @@ function Resume() {
         );
     };
     return (
-        <div className="card p-6">
-            <span className="block text-4xl font-bold mb-6 drop-in">
-                Work <span className="text-primary">Experience</span>
-              </span>
+        
+<div className="px-4 py-5 md:px-6 lg:px-8">
+    <div className="border-bottom-1 surface-border mb-6">
+    <span className="block text-4xl font-bold mb-6 drop-in">
+      Work <span className="text-primary">Experience</span>
+    </span>
+    </div>
+    <Timeline value={events} marker={customizedMarker} content={customizedContent} className="w-full md:w-20rem" />
+
+</div>
+        // <div className="card p-6">
+        //     <span className="block text-4xl font-bold mb-6 drop-in">
+        //         Work <span className="text-primary">Experience</span>
+        //       </span>
               
-             <Timeline value={events} marker={customizedMarker} content={customizedContent} className="w-full md:w-20rem" />
-        </div>
+        //      <Timeline value={events} marker={customizedMarker} content={customizedContent} className="w-full md:w-20rem" />
+        // </div>
 
     );
 

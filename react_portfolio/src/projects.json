@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "title": "Project 1",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project1",
+      "screenshot": "src/assets/img/08-web-apis-challenge-demo.gif"
+    },
+    {
+      "id": 2,
+      "title": "Daily Planner",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project2",
+      "screenshot": "src/assets/img/05-third-party-apis-homework-demo.gif"
+    },
+    {
+      "id": 2,
+      "title": "Project 3",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project2",
+      "screenshot": "src/assets/img/nyt.png"
+    },
+    {
+      "id": 2,
+      "title": "Project 4",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project2",
+      "screenshot": "src/assets/img/05-javascript-challenge-demo.png"
+    },
+    {
+      "id": 2,
+      "title": "Project 5",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project2",
+      "screenshot": "src/assets/img/weather-dashboard-screenshot.png"
+    },
+    {
+      "id": 2,
+      "title": "Project 6",
+      "deployedLink": "https://example.com",
+      "githubLink": "https://github.com/example/project2",
+      "screenshot": "/path/to/screenshot2.jpg"
+    }
+
+  ]
+  

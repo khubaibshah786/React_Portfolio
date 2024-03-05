@@ -10,6 +10,11 @@ export const items = [
         url: "/Portfolio",
     },
     {
+        label: 'Project Gallery',
+        icon: 'pi pi-link',
+        url: "/ProjectGallery",
+    },
+    {
         label: 'Resume',
         icon: 'pi pi-link',
         url: "/Resume",

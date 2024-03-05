@@ -10,7 +10,10 @@ import { StyleClass } from "primereact/styleclass";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
+import ProjectGallery from "./components/ProjectGallery";
 
+// import { projects } from './project'
+import projects from './projects.json'; // Correct import statement
 import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
 
@@ -19,10 +22,7 @@ import "primereact/resources/themes/md-dark-deeppurple/theme.css"; //theme
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import "./App.css";
-
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>
       <Router>
@@ -33,6 +33,7 @@ function App() {
               <Route path="/" element={<Hero />} />
               <Route path="/Resume" element={<Resume />} />
               <Route path="/Portfolio" element={<Portfolio />} />
+              <Route path="/ProjectGallery" element={<ProjectGallery projects={projects} />} />
             </Routes>
           </Wrapper>
         </div>

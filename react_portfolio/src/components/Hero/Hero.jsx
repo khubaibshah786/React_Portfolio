@@ -9,7 +9,7 @@ function Hero() {
           <div className="col-12 md:col-4 sm:col-12">
             <div className="p-3 border-round-sm font-bold">
               <span className="block text-6xl font-bold mb-1 drop-in">
-                Khubaib <span className="text-primary">Ul</span>-Haque
+                Khubaib <span style={{color: 'var(--primary-color)'}}>Ul</span>-Haque
               </span>
 
               <p className="mt-0 mb-4 text-700 line-height-3">
@@ -33,11 +33,18 @@ function Hero() {
               <i className="pi pi-phone" style={{ fontSize: '2rem' }}></i>
             </div>
           </div>
-          <div className="col-6 md:col-4 sm:col-6">
+          <div className=" text-center col-12 md:col-4 sm:col-12">
+            <img
+              src="src\assets\img\final.png"
+              alt="hero-1"
+              width={500}
+              className="hide-on-smaller-screens"
+              style={{borderRadius: '50%'}}
+            />
             </div>
-          <div className="col-6 md:col-4 sm:col-6 text-center">
+          <div className="col-12 md:col-4 sm:col-12 text-center">
           <span className="block text-6xl font-bold mb-4 drop-in">
-                Download <span className="text-primary">My </span>Resume
+                Download <span style={{color: 'var(--primary-color)'}}>My </span>Resume
               </span>
               <Button label="Resume" />
             {/* <img

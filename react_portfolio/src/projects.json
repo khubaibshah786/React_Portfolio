@@ -4,42 +4,42 @@
       "title": "Quiz Challenge",
       "deployedLink": "https://khubaibshah786.github.io/Code_Quiz",
       "githubLink": "https://github.com/khubaibshah786/Code_Quiz",
-      "screenshot": "assets/img/08-web-apis-challenge-demo.gif"
+      "screenshot": "src/assets/img/08-web-apis-challenge-demo.gif"
     },
     {
       "id": 2,
       "title": "Daily Planner",
       "deployedLink": "https://khubaibshah786.github.io/Daily_Planner",
       "githubLink": "https://github.com/khubaibshah786/Daily_Planner",
-      "screenshot": "assets/img/05-third-party-apis-homework-demo.gif"
+      "screenshot": "src/assets/img/05-third-party-apis-homework-demo.gif"
     },
     {
       "id": 3,
       "title": "Console Finance",
       "deployedLink": "https://khubaibshah786.github.io/Console-Finances",
       "githubLink": "https://github.com/khubaibshah786/Console-Finances",
-      "screenshot": "assets/img/nyt.png"
+      "screenshot": "src/assets/img/nyt.png"
     },
     {
       "id": 4,
       "title": "Password Generator",
       "deployedLink": "https://khubaibshah786.github.io/Password_Generator",
       "githubLink": "https://github.com/khubaibshah786/Password_Generator",
-      "screenshot": "assets/img/05-javascript-challenge-demo.png"
+      "screenshot": "src/assets/img/05-javascript-challenge-demo.png"
     },
     {
       "id": 5,
       "title": "Weather Dashboard",
       "deployedLink": "https://khubaibshah786.github.io/Weather_Dashboard",
       "githubLink": "https://github.com/khubaibshah786/Weather_Dashboard",
-      "screenshot": "assets/img/weather-dashboard-screenshot.png"
+      "screenshot": "src/assets/img/weather-dashboard-screenshot.png"
     },
     {
       "id": 6,
       "title": "Currency Converter",
       "deployedLink": "https://dpaul93.github.io/Group-3-Project-1",
       "githubLink": "https://github.com/dpaul93/Group-3-Project-1",
-      "screenshot": "assets/img/image.png"
+      "screenshot": "src/assets/img/image.png"
     }
 
   ]

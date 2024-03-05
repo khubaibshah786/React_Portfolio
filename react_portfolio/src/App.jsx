@@ -36,7 +36,7 @@ function App() {
               <Route path="/Resume" element={<Resume />} />
               <Route path="/Portfolio" element={<Portfolio />} />
               <Route path="/ProjectGallery" element={<ProjectGallery projects={projects} />} />
-              <Route path="/project/:id" element={<Project/>} />
+              <Route path="/:id" element={<Project/>} />
               <Route path="/Contact" element={<Contact />} />
             </Routes>
           </Wrapper>

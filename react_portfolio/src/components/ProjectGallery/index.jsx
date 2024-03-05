@@ -14,7 +14,7 @@ function ProjectGallery(props) {
         {props.projects.map((project) => (
           <React.Fragment key={project.id}>
             <div className="col">
-              <Link to={`/project/${project.id}`}>
+              <Link to={`/${project.id}`}>
                 <Card title={project.title} className="p-ripple p-6"
                 style={{
                   border: `1px solid var(--primary-color)`,

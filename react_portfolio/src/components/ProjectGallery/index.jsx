@@ -28,7 +28,7 @@ function ProjectGallery(props) {
                 <img
                   src={project.screenshot}
                   alt={project.title}
-                  style={{ width: "100%", height: "20vh" }}
+                  style={{ width: "50vh", height: "30vh" }}
                 />
                 <p>
                   Deployed Link:{" "}

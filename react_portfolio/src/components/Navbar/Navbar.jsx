@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div className="p-3">
-         <Menubar model={items}  end={end}/>
+         <Menubar model={items}  end={end} />
       {/* <div className="flex flex-column">
         <div className=" py-3 px-6 flex align-items-center justify-content-between relative lg:static">
           <a

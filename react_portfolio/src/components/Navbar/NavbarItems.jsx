@@ -1,30 +1,36 @@
 export const items = [
     {
+        key: 1,
         label: 'Home',
         icon: 'pi pi-home',
         url: "/",
     },
     {
+        key: 2,
         label: 'Portfolio',
         icon: 'pi pi-book',
         url: "/Portfolio",
     },
     {
+        key: 3,
         label: 'Project Gallery',
         icon: 'pi pi-link',
         url: "/ProjectGallery",
     },
     {
+        key: 4,
         label: 'Resume',
         icon: 'pi pi-link',
         url: "/Resume",
     },
     {
+        key: 5,
         label: 'Contact',
         icon: 'pi pi-envelope',
         url: "/Contact",
     },
     {
+        key: 6,
         label: 'Portfolio',
         icon: 'pi pi-search',
         items: [

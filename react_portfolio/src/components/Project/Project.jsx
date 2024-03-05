@@ -1,14 +1,42 @@
-// import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import projects from "../../projects.json";
 
-// function Project({ project }) {
-//   return (
-//     <div className="project">
-//       <h2>{project.title}</h2>
-//       <p>Deployed Link: <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">{project.deployedLink}</a></p>
-//       <p>GitHub Link: <a href={project.githubLink} target="_blank" rel="noopener noreferrer">{project.githubLink}</a></p>
-//       <img src={project.screenshot} alt={project.title} />
-//     </div>
-//   );
-// }
+function Project() {
+  const { id } = useParams();
 
-// export default Project;
+  const [projectData, setProjectData] = useState([]);
+  console.log("id here ", id);
+
+  useEffect(() => {
+    const project = projects.filter(
+
+      (singularProject) => singularProject.id == id
+    );
+    setProjectData(...project);
+}, []);
+useEffect(() => {
+    console.log("singular project ", projectData?.title);
+  }, [projectData])
+  
+  return (
+    <div>
+      <h2>{projectData?.title}</h2>
+      <p>
+        Deployed Link:{" "}
+        <a href={projectData?.deployedLink} target="_blank" rel="noopener noreferrer">
+          {projectData?.deployedLink}
+        </a>
+      </p>
+      <p>
+        GitHub Link:{" "}
+        <a href={projectData?.githubLink} target="_blank" rel="noopener noreferrer">
+          {projectData?.githubLink}
+        </a>
+      </p>
+      <img src={projectData?.screenshot} alt={projectData?.title} />
+    </div>
+  );
+}
+
+export default Project;

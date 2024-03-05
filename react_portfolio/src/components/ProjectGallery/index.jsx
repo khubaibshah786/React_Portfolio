@@ -1,8 +1,10 @@
 import React from "react";
 import { Card } from "primereact/card";
+import { Link } from "react-router-dom";
+import Project from "../Project/Project";
 import { Ripple } from "primereact/ripple";
-
 function ProjectGallery(props) {
+  console.log("project props", props);
   return (
     <div>
       <span className="block text-6xl font-bold mb-4 drop-in ml-6">
@@ -10,49 +12,24 @@ function ProjectGallery(props) {
       </span>
       <div className="grid p-6">
         {props.projects.map((project) => (
-          <div key={project.id} className="col">
-            <Card
-              title={project.title}
-              className="p-ripple"
-              style={{
-                border: `1px solid var(--primary-color)`,
-                color: `var(--primary-color)`,
-              }}
-            >
-              {/* <Ripple
+          <React.Fragment key={project.id}>
+            <div className="col">
+              <Link to={`/project/${project.id}`}>
+                <Card title={project.title} className="p-ripple p-6"
+                style={{
+                  border: `1px solid var(--primary-color)`,
+                  color: `var(--primary-color)`,
+                }}>
+                <Ripple
                 pt={{
                   root: { style: { background: "var(--primary-color)" } },
                 }}
-              /> */}
-              <div className="border-round-sm font-bold">
-                <img
-                  src={project.screenshot}
-                  alt={project.title}
-                  style={{ width: "50vh", height: "30vh" }}
-                />
-                <p>
-                  Deployed Link:{" "}
-                  <a
-                    href={project.deployedLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.deployedLink}
-                  </a>
-                </p>
-                <p>
-                  GitHub Link:{" "}
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.githubLink}
-                  </a>
-                </p>
-              </div>
-            </Card>
-          </div>
+              />
+              <img src={project.screenshot} alt={project.title} />
+                </Card>
+              </Link>
+            </div>
+          </React.Fragment>
         ))}
       </div>
     </div>

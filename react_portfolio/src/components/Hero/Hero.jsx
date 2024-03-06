@@ -35,10 +35,18 @@ function Hero() {
                 eager to tackle more complex problems and continue to find ways
                 to maximise user efficiency.
               </p>
-              <i className="pi pi-github mr-3" style={{ fontSize: '2rem' }}></i>
-              <i className="pi pi-linkedin mr-3" style={{ fontSize: '2rem' }}></i>
-              <i className="pi pi-envelope mr-3" style={{ fontSize: '2rem' }}></i>
-              <i className="pi pi-phone" style={{ fontSize: '2rem' }}></i>
+              <a href="https://github.com/khubaibshah786" target="_blank" rel="noopener noreferrer">
+                <i className="pi pi-github mr-3" style={{ fontSize: '2rem' }}></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-khubaib-ul-haque-7698bb81/" target="_blank" rel="noopener noreferrer">
+                <i className="pi pi-linkedin mr-3" style={{ fontSize: '2rem' }}></i>
+              </a>
+              <a href="mailto:khubaib_12@hotmail.com">
+                <i className="pi pi-envelope mr-3" style={{ fontSize: '2rem' }}></i>
+              </a>
+              <a href="tel:+1234567890">
+                <i className="pi pi-phone" style={{ fontSize: '2rem' }}></i>
+              </a>
             </div>
           </div>
           <div className=" text-center col-12 md:col-4 sm:col-12">

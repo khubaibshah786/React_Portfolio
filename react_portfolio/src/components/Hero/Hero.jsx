@@ -50,6 +50,7 @@ function Hero() {
             </div>
           </div>
           <div className=" text-center col-12 md:col-4 sm:col-12">
+          <div className="text-6xl text-primary font-bold mb-3 drop-in hide-on-smaller-screens">&lt; frontEndDeveloper /&gt;</div>
             <img
               src="src\assets\img\final.png"
               alt="hero-1"

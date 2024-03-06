@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Ripple } from "primereact/ripple";
 import { PrimeReactProvider } from "primereact/api";
 import { StyleClass } from "primereact/styleclass";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import Header from "./components/Header/Navbar";
+import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ProjectGallery from "./components/ProjectGallery";
 import Project from "./components/Project/Project";
@@ -29,10 +29,10 @@ function App() {
     <PrimeReactProvider value={{ ripple: true, StyleClass: true }}>
       <Router>
         <div className="App">
-          <Navbar />
+          <Header />
           <Wrapper>
             <Routes>
-              <Route path="/" element={<Hero />} />
+              <Route path="/" element={<Home />} />
               <Route path="/Resume" element={<Resume />} />
               <Route path="/Portfolio" element={<Portfolio />} />
               <Route path="/ProjectGallery" element={<ProjectGallery projects={projects} />} />

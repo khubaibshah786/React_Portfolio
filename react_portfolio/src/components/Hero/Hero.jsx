@@ -2,6 +2,14 @@ import { Button } from "primereact/button";
 import "./style.css";
 
 function Hero() {
+  const downloadResume = () => {
+    // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file
+    const resumeUrl = 'src/assets/CV/Khubaib_Ul_Haque_CV.pdf';
+    const anchor = document.createElement('a');
+    anchor.href = resumeUrl;
+    anchor.download = 'KhubaibUlHaquCV.pdf'; // Change 'Your_Name_Resume.pdf' to the desired name of the downloaded file
+    anchor.click();
+  }
   return (
     <div>
       <div className="p-6">
@@ -46,7 +54,7 @@ function Hero() {
           <span className="block text-6xl font-bold mb-4 drop-in">
                 Download <span style={{color: 'var(--primary-color)'}}>My </span>Resume
               </span>
-              <Button label="Resume" />
+              <Button label="Resume" onClick={downloadResume} />
             {/* <img
               src="src\assets\img\image.jpeg"
               alt="hero-1"

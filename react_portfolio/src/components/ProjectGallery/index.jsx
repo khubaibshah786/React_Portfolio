@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 import { Card } from "primereact/card";
 import { Link } from "react-router-dom";
 import Project from "../Project/Project";

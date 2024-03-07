@@ -1,12 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-
-import { Button } from "primereact/button";
-import { InputText } from "primereact/inputtext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Ripple } from "primereact/ripple";
 import { PrimeReactProvider } from "primereact/api";
-import { StyleClass } from "primereact/styleclass";
+
 import Header from "./components/Header/Navbar";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";

@@ -52,7 +52,7 @@ function Hero() {
           <div className=" text-center col-12 md:col-4 sm:col-12">
           <div className="text-6xl text-primary font-bold mb-3 drop-in hide-on-smaller-screens">&lt; frontEndDeveloper /&gt;</div>
             <img
-              src="src\assets\img\final.png"
+              src="assets/final.png"
               alt="hero-1"
               width={500}
               className="hide-on-smaller-screens"

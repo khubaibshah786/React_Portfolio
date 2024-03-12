@@ -1,6 +1,6 @@
 import { Button } from "primereact/button";
 import "./style.css";
-
+import img from '../../../public/final.png'
 function Hero() {
   const downloadResume = () => {
     // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file
@@ -52,7 +52,7 @@ function Hero() {
           <div className=" text-center col-12 md:col-4 sm:col-12">
           <div className="text-6xl text-primary font-bold mb-3 drop-in hide-on-smaller-screens">&lt; frontEndDeveloper /&gt;</div>
             <img
-              src="assets/final.png"
+              src="../../../public/final.png"
               alt="hero-1"
               width={500}
               className="hide-on-smaller-screens"

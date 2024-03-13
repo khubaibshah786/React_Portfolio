@@ -1,3 +1,5 @@
+import Resume from '../Resume/index'
+
 export const items = [
     {
         key: 1,
@@ -21,7 +23,7 @@ export const items = [
         key: 4,
         label: 'Resume',
         icon: 'pi pi-link',
-        url: "/",
+        url: Resume,
     },
     {
         key: 5,

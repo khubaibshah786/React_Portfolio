@@ -50,7 +50,7 @@ function Project() {
           </a>
         </p>
         <img
-          src={projectData?.screenshot}
+          src={projectData.screenshot}
           alt={projectData?.title}
           style={{ width: "50%", height: "auto" }}
         />

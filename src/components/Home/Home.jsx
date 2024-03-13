@@ -1,6 +1,6 @@
 import { Button } from "primereact/button";
 import "./style.css";
-import img from '../../../public/final.png'
+import img from '../../assets/img/final.png'
 function Hero() {
   const downloadResume = () => {
     // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file

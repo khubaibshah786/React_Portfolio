@@ -1,5 +1,3 @@
-import Resume from '../Resume/index'
-
 export const items = [
     {
         key: 1,
@@ -11,25 +9,25 @@ export const items = [
         key: 2,
         label: 'Portfolio',
         icon: 'pi pi-book',
-        url: "/",
+        url: "/Portfolio",
     },
     {
         key: 3,
         label: 'Project Gallery',
         icon: 'pi pi-link',
-        url: "/",
+        url: "/ProjectGallery",
     },
     {
         key: 4,
         label: 'Resume',
         icon: 'pi pi-link',
-        url: Resume,
+        url: "/Resume",
     },
     {
         key: 5,
         label: 'Contact',
         icon: 'pi pi-envelope',
-        url: "/",
+        url: "/Contact",
     },
     {
         key: 6,

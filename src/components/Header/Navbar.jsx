@@ -77,12 +77,7 @@ function Navbar() {
                   <span>Contact</span>
                 </NavLink>
               </li>
-              <li>
-                <a className="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 p-ripple">
-                  <i className="pi pi-chart-line mr-2"></i>
-                  <span>Stats</span>
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>

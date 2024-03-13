@@ -1,4 +1,3 @@
-import Resume from "../Resume";
 export const items = [
     {
         key: 1,
@@ -22,7 +21,7 @@ export const items = [
         key: 4,
         label: 'Resume',
         icon: 'pi pi-link',
-        component: Resume,
+        path: "/Resume",
     },
     {
         key: 5,

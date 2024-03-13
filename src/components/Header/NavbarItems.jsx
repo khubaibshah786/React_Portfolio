@@ -4,6 +4,7 @@ export const items = [
         label: 'Home',
         icon: 'pi pi-home',
         url: "/",
+        
     },
     {
         key: 2,
@@ -15,13 +16,13 @@ export const items = [
         key: 3,
         label: 'Project Gallery',
         icon: 'pi pi-link',
-        url: "/ProjectGallery",
+        to: "/ProjectGallery",
     },
     {
         key: 4,
         label: 'Resume',
         icon: 'pi pi-link',
-        path: "/Resume",
+        to: "/Resume",
     },
     {
         key: 5,

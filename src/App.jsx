@@ -2,15 +2,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PrimeReactProvider } from "primereact/api";
 
 import Header from "./components/Header/Navbar";
-import Home from "./components/Home/Home";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
 import ProjectGallery from "./components/ProjectGallery";
-import Project from "./components/Project/Project";
+import Project from "./components/Project";
 import Contact from "./components/Contact";
 
 // import { projects } from './project'
 import projects from './projects.json'; // Correct import statement
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
 
 // change the theme by adding any of the below themes:

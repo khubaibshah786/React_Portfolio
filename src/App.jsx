@@ -68,7 +68,7 @@ function App() {
       <Router>
         <div className="App">
           <Header />
-          <Wrapper>
+          {/* <Wrapper> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Resume" element={<Resume />} />
@@ -77,7 +77,7 @@ function App() {
               <Route path="/:id" element={<Project/>} />
               <Route path="/Contact" element={<Contact />} />
             </Routes>
-          </Wrapper>
+          {/* </Wrapper> */}
         </div>
       </Router>
     </PrimeReactProvider>

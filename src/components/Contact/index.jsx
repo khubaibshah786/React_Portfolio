@@ -125,7 +125,6 @@ export default function Contact() {
             <a onClick={downloadResume}>
               <i className="pi pi-file-pdf" style={{ fontSize: "2rem" }}></i>
             </a>
-            {/* <Button label="Resume" onClick={downloadResume} /> */}
           </div>
         </form>
       </div>

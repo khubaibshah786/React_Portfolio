@@ -103,28 +103,31 @@ Header:
 
 6. Must have a contact form for handling events
 
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![the dashboard for searching weather in different citys](./assets/10-server-side-apis-challenge-demo.png)
 
 ## Screenshot(s)
 
-![the dashboard for searching weather in different citys](./starter/img/weather-dashboard-screenshot.png)
+![Homepage](./src/assets/img/homepage.png)
+![Contact](./src/assets/img/projectgallery.png)
+![Contact](./src/assets/img/project.png)
+![Contact](./src/assets/img/contactform.png)
 
 ## Repository Setup Instructions
 ### 1. Clone the Repository:
-- git clone https://github.com/khubaibshah786/Weather_Dashboard
+- git clone [Click here](https://github.com/khubaibshah786/React_Portfolio)
 
-### 5. Deploy to GitHub Pages:
-After completing my Currency Compass project, we deployed it to GitHub Pages for public access.
+### 5. Deploy to Netlify:
+After completing my React Profolio, i deployed it to netlify for public access.
+[Click here](https://cool-mandazi-9ab0bd.netlify.app/)
 
 ### Technologies Used
 - HTML
-- jQuery
+- Javascript
+- React
+- PrimeReact
+- PrimeIcons
+- PrimeFlex
 - CSS
 
  ## Deployed application
 
- - Click here [Live Site](https://khubaibshah786.github.io/Weather_Dashboard).
+ - Click here [live Site](https://cool-mandazi-9ab0bd.netlify.app/)

@@ -9,7 +9,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 
 // import { projects } from './project'
-import projects from './projects.json'; // Correct import statement
+import projects from './projects'; // Correct import statement
 // import Wrapper from "./components/Wrapper";
 import Resume from "./components/Resume";
 

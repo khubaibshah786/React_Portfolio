@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import projects from "../../projects.json";
+import projects from "../../projects.js";
 
 function Project() {
   const { id } = useParams();
@@ -20,7 +20,7 @@ function Project() {
 
   return (
     <div>
-      <div className=" px-4 py-5 md:px-6 lg:px-8">
+      <div className="px-4 py-5 md:px-6 lg:px-8">
         <div className="border-bottom-1 surface-border">
           <span className="block text-6xl font-bold mb-4 drop-in">
             My{" "}

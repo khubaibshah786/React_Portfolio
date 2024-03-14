@@ -5,6 +5,14 @@ import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 
 export default function Contact() {
+  const downloadResume = () => {
+    // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file
+    const resumeUrl = 'src/assets/CV/Khubaib_Ul_Haque_CV.pdf';
+    const anchor = document.createElement('a');
+    anchor.href = resumeUrl;
+    anchor.download = 'KhubaibUlHaquCV.pdf'; // Change 'Your_Name_Resume.pdf' to the desired name of the downloaded file
+    anchor.click();
+  }
   const toast = useRef(null);
 
   const handleSubmit = (event) => {
@@ -112,8 +120,12 @@ export default function Contact() {
               ></i>
             </a>
             <a href="tel:+1234567890">
-              <i className="pi pi-phone" style={{ fontSize: "2rem" }}></i>
+              <i className="pi pi-phone mr-2" style={{ fontSize: "2rem" }}></i>
             </a>
+            <a onClick={downloadResume}>
+              <i className="pi pi-file-pdf" style={{ fontSize: "2rem" }}></i>
+            </a>
+            {/* <Button label="Resume" onClick={downloadResume} /> */}
           </div>
         </form>
       </div>

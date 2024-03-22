@@ -3,11 +3,11 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
-
+import resume from '../../assets/CV/Khubaib_Ul_Haque_CV.pdf'
 export default function Contact() {
   const downloadResume = () => {
     // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file
-    const resumeUrl = 'src/assets/CV/Khubaib_Ul_Haque_CV.pdf';
+    const resumeUrl = resume;
     const anchor = document.createElement('a');
     anchor.href = resumeUrl;
     anchor.download = 'KhubaibUlHaquCV.pdf'; // Change 'Your_Name_Resume.pdf' to the desired name of the downloaded file

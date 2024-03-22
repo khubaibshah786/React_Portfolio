@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../projects.js";
 
+import { Link } from "react-router-dom";
+import { Button } from 'primereact/button';
+        
 function Project() {
   const { id } = useParams();
 
@@ -20,9 +23,19 @@ function Project() {
 
   return (
     <div>
-      <div className="surface-section px-4 py-8 md:px-6 lg:px-8">
+      <div className=" px-4 py-8 md:px-6 lg:px-8">
+      <Link to={`/ProjectGallery`}>
+        <Button label="Back to Projects" icon="pi pi-angle-left" />
+        </Link>
         <div className="w-full lg:hidden">
-          <div className="text-900 text-3xl font-medium">Feature Title</div>
+          <div className="text-900 text-3xl font-medium">
+          
+            <span className="block text-6xl font-bold  drop-in">
+                  My{" "}
+                  <span style={{ color: "var(--primary-color)" }}>
+                    {projectData?.title}
+                  </span>
+                </span></div>
           <p className="text-600 text-xl line-height-3 mb-6"></p>
         </div>
         <div className="grid justify-content-center flex-column lg:flex-row">

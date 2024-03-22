@@ -1,10 +1,11 @@
 import { Button } from "primereact/button";
 import "./style.css";
 import img from '../../assets/img/final.png'
+import Resume from '../../assets/CV/Khubaib_Ul_Haque_CV.pdf'
 function Hero() {
   const downloadResume = () => {
     // Replace 'path_to_your_resume_file.pdf' with the actual path to your resume file
-    const resumeUrl = 'src/assets/CV/Khubaib_Ul_Haque_CV.pdf';
+    const resumeUrl = Resume;
     const anchor = document.createElement('a');
     anchor.href = resumeUrl;
     anchor.download = 'KhubaibUlHaquCV.pdf'; // Change 'Your_Name_Resume.pdf' to the desired name of the downloaded file
